@@ -63,7 +63,9 @@ public class AddNewTask extends BottomSheetDialogFragment {
             String task = bundle.getString("task");
             newTaskText.setText(task);
             if(task.length()>0) {
-                newTaskSaveButton.setTextColor(ContextCompat.getColor(getContext(),R.color.red_300));
+                newTaskSaveButton.setEnabled(false);
+                newTaskText.setTextColor(Color.GRAY);
+                newTaskSaveButton.setTextColor(Color.GRAY);
             }
         }
 
@@ -77,9 +79,11 @@ public class AddNewTask extends BottomSheetDialogFragment {
                 if (s.toString().equals("")){
                     newTaskSaveButton.setEnabled(false);
                     newTaskText.setTextColor(Color.GRAY);
+                    newTaskSaveButton.setTextColor(Color.GRAY);
                 } else {
                     newTaskSaveButton.setEnabled(true);
-                    newTaskText.setTextColor(ContextCompat.getColor(getContext(),R.color.red_300));
+                    newTaskSaveButton.setTextColor(ContextCompat.getColor(getContext(),R.color.red_300));
+                    newTaskText.setTextColor(ContextCompat.getColor(getContext(),R.color.black));
                 }
             }
 

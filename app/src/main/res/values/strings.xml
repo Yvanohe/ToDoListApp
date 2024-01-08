@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">TodoListApp</string>
+    <string name="app_name" translatable="false">TodoListApp</string>
+    <string name="title">Tasks</string>
+    <string name="deleteDialogTitle">Delete task</string>
+    <string name="deleteDialogConfirmationMessage">Are you sure you want to delete the task ?</string>
 </resources>
